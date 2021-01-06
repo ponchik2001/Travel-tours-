@@ -1,0 +1,60 @@
+.download {
+    background-image: url(../../img/download_bk.png), url(../../img/download_bk_el1.png), url(../../img/download_bk_el2.png);
+    background-position: right bottom, top 85px left 45px, left 416px top 420px;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items:center;
+    margin-bottom: 248px;
+    height: 542px;
+}
+.download_container{
+    width: 481px;
+    margin-left: 0px;
+    margin-right: auto;
+}
+
+.download h2 {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 50px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+.download p {
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 30px;
+    color: #7D7987;
+    margin-bottom: 40px;
+}
+.download .button {
+    text-align: center;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    background: #FB8F1D;
+    color: white;
+    width: 164px;
+    padding: 16px 0;
+    box-sizing: border-box;
+}
+
+@media (max-width: 750px) {
+    .download{
+        text-align: center;
+        height: auto;
+        padding-top: 30px;
+        margin-bottom: 30px;
+    }
+    .download_container{
+        width: auto;
+    }
+    .download .button{
+        width: auto;
+    }
+}

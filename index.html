@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Travel & tours </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+    <script ENGINE="text/javascript" src="https://code.jquery.com/jquery-1.11.2.js "></script>
+    <script language="JavaScript" >
+        $(document).click(function(){
+            if ($('.navbar_item').css('display') == 'none'){
+                $('#menu_btn').click(function(){
+                    var $speech = $('div.navbar_item');
+                    $speech.css('display','block');
+                })
+            }
+            if ($('.navbar_item').css('display') == 'block'){
+                $('#menu_btn').click(function(){
+                    var $speech = $('div.navbar_item');
+                    $speech.css('display','none');
+                })
+            }
+        })
+        
+        // установливаем обработчик события resize
+        $( window ).resize(function() {
+            $( "#width" ).text( $( window ).width() );
+            $( "#height" ).text( $( window ).height() );
+            });
+
+        // вызовем событие resize
+        $(window).resize();
+        
+    </script>
+    <div class="header container">
+        <!-- Шапка -->
+       <div class="cap">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.png" alt=""></a>
+                
+            </div>
+            
+            <div id="navbar">
+               <div id="menu_btn" style="width: 40px; height: 40px;"><img src="img/hamburger.png" alt="" width="40px" height="40px"></div>
+                <div class="navbar_item"><a href="#">Home</a></div>
+                <div class="navbar_item"><a href="#">Destinations</a></div>
+                <div class="navbar_item"><a href="#">About</a></div>
+                <div class="navbar_item"><a href="#">Partner</a></div>
+                <div class="navbar_item button"><a href="#">Login</a></div>
+                <div class="navbar_item button reg"><a href="#">Register</a></div>
+                
+            </div>
+        </div>
+        
+        <!-- "Explore and travel" -->
+        <div class="section holiday_finder">
+           <div class="container">
+            <h2>Explore and <br>Travel</h2>
+            <h3>Holiday finder</ h3>
+            <span></span>
+            
+            <div class="holiday_finder_form">
+                <div class="holiday_finder_form-row">
+                <select name="Location">
+                    <option value="s1">Location</option>
+                    <option value="s2" selected>Location</option>
+                    <option value="s3">Lorem</option>
+                </select>
+                                
+                <select name="Activicy">
+                    <option value="s1">Activicy</option>
+                    <option value="s2" selected>Activicy</option>
+                    <option value="s3">Lorem</option>
+                </select>
+                 </div>
+                 
+                <div class="holiday_finder_form-row"> 
+                <select name="Grade">
+                    <option value="s1">Grade</option>
+                    <option value="s2" selected>Grade</option>
+                    <option value="s3">Lorem</option>
+                </select>
+                
+                <select name="Date">
+                    <option value="s1">Date</option>
+                    <option value="s2" selected>Date</option>
+                    <option value="s3">Lorem</option>
+                </select>
+                </div>
+            </div>
+            
+            <div class="button reg explore_button"><a href="">Explore</a></div>
+        </div> 
+        </div>
+    </div>
+    
+    <div class="learn-more container">
+            <div class="learn-more_container">
+                <h2>A new way to explore the world</h2>
+                <p>For decades travellers have reached for Lonely Planet books when looking to plan and execute their perfect trip, but now, they can also let Lonely Planet Experiences lead the way</p>
+                <div class="button"><a href="">Learn more</a></div>
+            </div>
+    </div>
+    
+    <div class="featured-destinations container">
+       
+        <div class="featured-destinations__tittle">  
+            <h2>Featured destinations</h2>
+            <div class="featured-destinations__btn">
+                <a href="#"><p>View all</p>
+                <div><img src="img/arrow_btn.png" alt=""></div></a>    
+            </div>
+        </div>
+        
+        <div class="images-container">
+            <div class="images-container__item">
+                <div class="item-name">
+                    <h3>Raja Ampat<span>Indonesia</span></h3>
+                </div>
+            </div>
+            
+            <div class="images-container__item">
+                <div class="item-name">
+                    <h3>Fanjingshan<span>China</span></h3>
+                </div>
+            </div>
+            
+            <div class="images-container__item">
+                <div class="item-name">
+                    <h3>Vevey<span>Switzerland</span></h3>
+                </div>
+            </div>
+            
+            <div class="images-container__item">
+                
+                <div class="item-name">
+                    <h3>Skadar<span>Montenegro</span></h3>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <div class="download container">
+        <div class="download_container">
+            <h2>Guides by Thousand <br> Sunny</h2>
+            <p>Packed with tips and advice from our on-the-ground experts, our city guides app (iOS and Android) is the ultimate resource before and during a trip.</p>
+            <div class="button"><a href="">Download</a></div>
+        </div>
+    </div>
+    
+    <div class="testimonials container">
+        <h2>Testimonials</h2>
+        <div class="testimonials__container">
+            <div class="slider">
+              
+               <div class="slider__item">
+                     <div class="description">
+                        <div class="stars">
+                            <div class="stars__item"><img src="img/star.png" alt=""></div>
+                            <div class="stars__item"><img src="img/star.png" alt=""></div>
+                            <div class="stars__item"><img src="img/star.png" alt=""></div>
+                            <div class="stars__item"><img src="img/star.png" alt=""></div>
+                            <div class="stars__item"><img src="img/star.png" alt=""></div>
+                        </div>
+                        <p>“Quisque in lacus a urna fermentum <br> euismod. Integer mi nibh, dapibus ac <br>scelerisque eu, facilisis quis purus. Morbi<br> blandit sit amet turpis nec”</p>
+                        <h3>Edward Newgate</h3>
+                        <h4>Founder Circle</h4>
+                    </div>
+                    <div class="image">
+                        <div class="image-buttons">
+                            <div class="image-buttons__item"><img src="img/button_back.png" alt=""></div>
+                            <div class="image-buttons__item"><img src="img/button.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    <div class="trending-stories container">
+      
+       <div class="trending-stories__tittle">  
+            <h2>Trending stories</h2>
+            <div class="trending-stories__btn">
+                <a href="#"><p>View all</p>
+                <div><img src="img/arrow_btn.png" alt=""></div></a>    
+            </div>
+        </div>
+        
+        <div class="trending-stories__container">
+           
+            <div class="trending-stories__item">
+                <div class="trending-stories__image"><img src="img/trending-item1.png" alt=""></div>
+                <h3>The many benefits of taking a healing holiday</h3>
+                <p>‘Helaing holidays’ are on the rise tohelp maximise your health and happines...</p>
+                <a href="" class="read_more">Read more</a>
+            </div>
+            
+            <div class="trending-stories__item">
+                <div class="trending-stories__image"><img src="img/trending-item2.png" alt=""></div>
+                <h3>The best Kyoto restaurant to try Japanese food</h3>
+                <p>From tofu to teahouses, here’s our guide to Kyoto’s best restaurants to visit...</p>
+                <a href="" class="read_more">Read more</a>
+            </div>
+            
+            <div class="trending-stories__item">
+                <div class="trending-stories__image"><img src="img/trending-item3.png" alt=""></div>
+                <h3>Skip Chichen Itza and head to this remote Yucatan</h3>
+                <p>It’s remote and challenging to get, but braving the jungle and exploring these ruins without the...</p>
+                <a href="" class="read_more">Read more</a>
+            </div>
+            
+            
+            <div class="trending-stories__item">
+                <div class="trending-stories__image"><img src="img/trending-item4.png" alt=""></div>
+                <h3>Surf’s up at these beginner spots around the world</h3>
+                <p>If learning to surf has in on your to- do list for a while, the good news is: it’s never too late...</p>
+                <a href="" class="read_more">Read more</a>
+            </div>
+        </div>
+        
+    </div>
+    
+    <div class="footer">
+        <div class="container">
+        <div class="footer-col__container">
+            <div class="column">
+                <div class="logo"><img src="img/logo.png" alt="logo"></div>
+                <h5>Plan and book your perfect trip with <br> expert advice, travel tips destination <br> information from us</h5>
+                <h4>©2020 Thousand Sunny. All rights reserved</h4>
+            </div>
+        
+            <div class="column">
+                <h3>Destinations</h3>
+                <p><a href="#">Africa</a></p>
+                <p><a href="#">Antarctica</a></p>
+                <p><a href="#">Asia</a></p>
+                <p><a href="#">Europe</a></p>
+                <p><a href="#">America</a></p>
+            </div>
+        
+            <div class="column">
+                <h3>Shop</h3>
+                <p><a href="#">Destination Guides</a></p>
+                <p><a href="#">Pictorial & Gifts</a></p>
+                <p><a href="#">Special Offers</a></p>
+                <p><a href="#">Delivery Times</a></p>
+                <p><a href="#">FAQs</a></p>
+            </div>
+        
+            <div class="column">
+                <h3>Interests</h3>
+                <p><a href="#">Adventure Travel</a></p>
+                <p><a href="#">Art And Culture</a></p>
+                <p><a href="#">Wildlife And Nature</a></p>
+                <p><a href="#">Family Holidays</a></p>
+                <p><a href="#">Food And Drink</a></p>
+            </div>
+        </div>
+        
+        <div class="footer-soc_container">
+            <div><a href="#"><img src="img/twitter.png" alt=""></a></div>
+            <div><a href="#"><img src="img/facebook.png" alt=""></a></div>
+            <div><a href="#"><img src="img/instagram.png" alt=""></a></div>
+            <div><a href="#"><img src="img/in.png" alt=""></a></div>
+            <div><a href="#"><img src="img/youtube.png" alt=""></a></div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+.trending-stories {
+    background-image: url(../../img/trending-stories_bk_el1.png), url(../../img/trending-stories_bk_el2.png);
+    background-position: top left 501px, bottom left 837px;
+    background-repeat: no-repeat;
+    margin-bottom: 196px;
+    padding-bottom: 55px;
+}
+
+.trending-stories .trending-stories__tittle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 54px;
+    padding-top: 40px;
+}
+
+
+.trending-stories h2 {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 50px;
+    color: #000000    
+}
+
+
+.trending-stories .trending-stories__btn a{
+    display: flex;
+    align-items: center;
+    color: #FB8F1D;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.trending-stories a img {
+    margin-left: 11px;
+}
+
+
+.trending-stories .trending-stories__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.trending-stories .trending-stories__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 21px;
+}
+
+
+.trending-stories .trending-stories__image img{
+    width: 261px;
+    height: 231px;
+    border-radius: 8px 8px 0 0;
+}
+
+
+.trending-stories h3 {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 30px;
+    color: #000000;
+    margin-bottom: 13px;
+    margin-top: 13px;
+}
+
+.trending-stories .trending-stories__item p {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 26px;
+    color: #7D7987;
+    margin-bottom: 23px;
+}
+
+.trending-stories .read_more {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 28px;
+    color: #FB8F1D;
+}
+
+@media (max-width: 1076px) {
+    .trending-stories__container{
+        flex-direction: column;
+        text-align: center;
+    }
+    .trending-stories__item{
+        margin-top: 15px;
+    }
+    
+}
+
+@media (max-width: 750px){
+    .trending-stories{
+        margin-bottom: 0px;
+    }
+}

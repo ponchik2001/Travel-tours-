@@ -1,0 +1,214 @@
+#menu_btn{
+    display: none;
+}
+
+.header{
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 270px;
+}
+
+.cap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 43px;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar_item{
+    margin-right: 34px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #B8BECD;
+    text-align: center;
+}
+
+.navbar_item:hover{
+    color: #202336;
+}
+
+.navbar_item:last-child{
+    margin-right: 0px;
+    margin-left: 18px;
+}
+
+.navbar_item:nth-child(5){
+    margin-right: 20px;
+}
+
+.button{
+    border: 1px solid #FB8F1D;
+    border-radius: 8px; 
+    padding: 8px 0;
+    width: 130px;
+    color: #FB8F1D;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.reg{
+    background-color:  #FB8F1D;
+    color: #ffffff;
+}
+
+.section{
+    width: 100%;
+}
+
+.holiday_finder{
+    padding-top: 80px;
+    background-image: url(../../img/holiday_finder_background.png), url(../../img/element2.png), url(../../img/element3.png), url(../../img/element.png);
+    background-position:  right bottom, left bottom 124px, top 145px left 468px, bottom 30px left 542px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 687px;
+}
+
+.explore_button{
+    text-align: center;
+    width: 180px;
+}
+
+.explore_button:hover{
+    color: #202336;
+}
+
+.holiday_finder h2{
+    padding-top: 45px;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 80px;
+    color: #202336;
+    margin-bottom: 75px;
+}
+
+.holiday_finder h3{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    color: #202336;
+    
+}
+
+.holiday_finder span{
+    margin-top: 21px;
+    display: block;
+    height: 2px;
+    background: #202336;
+    border-radius: 4px;
+    width: 32px;
+}
+
+.holiday_finder_form{
+    margin-top: 48px;
+    margin-bottom: 51px;
+}
+
+.holiday_finder_form select{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 32px;
+    color: #4A4C53;
+    width: 220px;
+    height: 52px;
+    border: 0.8px solid #AFB0B9;
+    border-radius: 6px;
+    background: url(../../img/arrow.svg) no-repeat, white;
+    background-position: right 20px center;
+    box-sizing: border-box;
+    padding-left: 31px;
+    margin-right: 30px;
+    appearance: none;
+}
+
+.holiday_finder_form-row{
+    margin-bottom: 35px;
+}
+
+.holiday_finder_form-row:last-child{
+    margin-bottom: 0px;
+}
+
+@media (min-width: 750px){
+     .navbar_item{
+        display: block;
+    }
+}
+
+@media (max-width: 750px){
+    .cap{
+        position: fixed;
+        justify-content: space-around;
+        align-content: stretch;
+        padding-top: 10px;
+        margin: 0 auto;
+        width: 100%;
+        background: white;
+        padding-bottom: 10px;
+        padding-left: 10px;
+    }
+    #navbar{
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    .navbar_item{
+        margin: 10px auto;
+        display: none;
+    }
+    #menu_btn{
+        cursor: pointer;
+        display: block;
+    }
+    
+    .navbar_item:nth-child(5){
+        margin: 10px auto;
+    }
+     .navbar_item:last-child{
+        margin: 10px auto;
+    }
+    .holiday_finder{
+        padding-top: 0px;
+        text-align: center;
+        height: auto;
+    }
+    .holiday_finder h2{
+        padding-top: 0xp;
+        margin-bottom: 0px;
+    }
+    .holiday_finder span{
+        display: none;
+    }
+    .holiday_finder_form{
+        margin: 10px auto 10px auto;
+    }
+    .explore_button{
+        width: auto;
+    }
+}
+
+@media (max-width: 546px){
+    
+    
+    .holiday_finder_form select{
+        width: 220px;
+        margin: 10px 0px 0px;
+    }
+}
+
+

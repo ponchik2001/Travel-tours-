@@ -1,0 +1,115 @@
+.testimonials {
+    margin-bottom: 213px;
+}
+
+.testimonials h2 {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    color: #000000;
+    margin-bottom: 60px;
+}
+
+.testimonials .stars {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.testimonials .stars__item {
+    margin-right: 15px;
+}
+
+.testimonials .stars__item:last-child{
+    margin-right: 0px;
+}
+
+.testimonials .slider {
+    
+}
+
+.testimonials .slider__item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.testimonials .description {
+    margin-right: 184px;
+}
+
+.testimonials p {
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+    margin-bottom: 40px;
+}
+
+.testimonials h3 {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 48px;
+    color: #000000;
+}
+
+.testimonials h4 {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 48px;
+    color: rgba(0, 0, 0, 0.85);
+}
+
+.testimonials .image {
+    background-image: url(../../img/slider_bk_el1.png), url(../../img/slider_item1.png), url(../../img/slider_bk_el2.png);
+    background-position: bottom left, center, top right;
+    height: 528px;
+    width: 421px;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 16px 18px;
+    box-sizing: border-box;
+}
+
+.testimonials .image .image-buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    width: 132px;
+    padding: 20px 0 0 30px;
+    box-sizing: border-box;
+    border-radius: 16px 0px 0px 0px;
+}
+
+
+@media (max-width: 750px){
+    .slider__item{
+        flex-direction: column;
+    }
+    .testimonials h2{
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .testimonials .description{
+        margin: auto;
+    }
+    .testimonials .stars{
+        align-content: center;
+        justify-content: center;
+    }
+    .testimonials .image{
+        width: 100%;
+    }
+    .testimonials{
+        margin-bottom: 30px;
+    }
+}
+
